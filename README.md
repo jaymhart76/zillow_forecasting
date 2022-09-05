@@ -79,19 +79,24 @@ Once we had a model which worked on one Metro, we were able to run the model acr
 
 With this we were able to forecast the data out for 3 years and determine the 5 highest ROI within our data set.
 
-![image](https://user-images.githubusercontent.com/98813858/188433888-6e497242-c009-40e1-a6a3-1e3e8318487d.png)
+![image](https://user-images.githubusercontent.com/98813858/188448375-e7411da7-cbe1-43df-84ee-62667b634809.png)
 
-All five of these Metro areas outporformed the mean ROIN for the data by a wide margin and all would be great options for investment, so next we looked at the risk involved and how spread the forecast confidenc interval would be.  The Investment compane wants to ensure that they are not only making a good ROI but that they are also limiting the risk involved with this investment.  We utilized confidence intervals to give us an upper and a lower prediction and then calculated that as a function of the purchasing price to give us an error percentage.
+All five of these Metro areas outporformed the mean ROI for the data by a wide margin and all would be great options for investment, so next we looked at the risk involved and how spread the forecast confidenc interval would be.  The Investment compane wants to ensure that they are not only making a good ROI but that they are also limiting the risk involved with this investment.  We utilized confidence intervals to give us an upper and a lower prediction and then calculated that as a function of the purchasing price to give us an error percentage.
 
-![image](https://user-images.githubusercontent.com/98813858/188434311-516ca758-7658-4664-97e8-1ebd77011845.png)
-
-
-From the combination of these two sets of forecast information, we are making the recomendation to begin the real estate investment process in Pittsburgh and Reading.  They have a top five projected ROI, but come with a much lower associated risk of investment.  Oil City and Meadville come with an equally high projected ROI but they come with a greater projected risk factor, being that the range of projected selling prices is much wider then our other options.
+![image](https://user-images.githubusercontent.com/98813858/188448455-1dd4b725-edbd-4cca-920e-86afca7f0815.png)
 
 
+Now if we take a look at the top five ROI Metro's in conjunction with the possible error, derived from the spread of the confidence interval.  We can see that the top three Metros all have an error percentage above the mean of all the Metros in our dataset.  This would cause concern and leads us to recommend Pittsburgh and Reading as our top two Metro areas for investment, since they couple a lower risk of prediction with an ROI still well above the mean ROI for the total set.
 
 
 
+
+```
+├── data : zillow_data.csv
+├── README.md : project information and repository structure
+├── dsc-phase-4-project-presentation.pptx : (Presentation for Stakeholders)
+└── dsc-phase-4-project.ipynb (jupyter notebook used for modeling)
+```
 
 
 
