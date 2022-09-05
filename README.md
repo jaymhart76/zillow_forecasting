@@ -92,10 +92,10 @@ Now if we take a look at the top five ROI Metro's in conjunction with the possib
 
 
 ```
-├── data : zillow_data.csv
+├── zillow_data.csv : (Data used for modeling and forecasting)
 ├── README.md : project information and repository structure
-├── dsc-phase-4-project-presentation.pptx : (Presentation for Stakeholders)
-└── dsc-phase-4-project.ipynb (jupyter notebook used for modeling)
+├── Tri_state_presentation.pptx : (Presentation for Stakeholders)
+└── Zillow_Tri_State_Project.ipynb (jupyter notebook used for modeling)
 ```
 
 
