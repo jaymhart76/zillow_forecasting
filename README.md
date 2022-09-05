@@ -49,6 +49,62 @@ Created a ROI column and looked at what the historical ROI over the entire datas
 
 ![image](https://user-images.githubusercontent.com/98813858/188322241-6db913ff-1a0b-4784-b707-76400428ef57.png)
 
+## Modeling
+
+From the data we were able to discern that the market peaked in 2008 and then crashed, so we did not utilize the data prior to the crash as it is a normally stable market which took a crash and this would have greatly effected our model.
+
+After our initial ROI investigation, we determined that Pittsburgh would be the metro we used to train our model and we choose 2012 as the time frame from which we would begin our modeling and utilize those 6 years to forecast our future predictions.
+
+I utilized the SARIMAX model because of the fact that I could use my data without any further cleaning or filtering, the SARIMAX model automatically does differencing and acounts for seasonality.  This means that the model will become stationary without firther changing of the data.
+
+After fitting the model, we were able to run the following diagnostic check to ensure that our model was not correlated and had a normal distribution.
+
+![image](https://user-images.githubusercontent.com/98813858/188423669-f869ce65-e6e2-49b2-9aa3-df60120979d5.png)
+
+In the top right our KDE line closely follows the normal distribution, having a mean of 0 and a std   deviation of 1<br>
+Our qq plot closely follows our our residuals line trend line.  <br>This shows us that our residuals are normally distributed
+From the Correlogram we can see that the time series residuals have a low correlation with their lag versions and it becomes clearer as we move further along the time series
+
+
+From these observations, we can assume that there are not obvious correlations and we can fit the model for predictions of future prices
+
+# Recommendations and Conlusions
+
+NOw that we had a model that worked and we could fit it onto our data set to test, we forecasted out Pittsburgh for 3 years
+
+![image](https://user-images.githubusercontent.com/98813858/188433126-5a8c47d3-8c69-4aed-90c3-a8e55271dcbf.png)
+
+
+Once we had a model which worked on one Metro, we were able to run the model across all of the Metro's that were within our clients set Geographical and budget constraints.
+
+With this we were able to forecast the data out for 3 years and determine the 5 highest ROI within our data set.
+
+![image](https://user-images.githubusercontent.com/98813858/188433888-6e497242-c009-40e1-a6a3-1e3e8318487d.png)
+
+All five of these Metro areas outporformed the mean ROIN for the data by a wide margin and all would be great options for investment, so next we looked at the risk involved and how spread the forecast confidenc interval would be.  The Investment compane wants to ensure that they are not only making a good ROI but that they are also limiting the risk involved with this investment.  We utilized confidence intervals to give us an upper and a lower prediction and then calculated that as a function of the purchasing price to give us an error percentage.
+
+![image](https://user-images.githubusercontent.com/98813858/188434311-516ca758-7658-4664-97e8-1ebd77011845.png)
+
+
+From the combination of these two sets of forecast information, we are making the recomendation to begin the real estate investment process in Pittsburgh and Reading.  They have a top five projected ROI, but come with a much lower associated risk of investment.  Oil City and Meadville come with an equally high projected ROI but they come with a greater projected risk factor, being that the range of projected selling prices is much wider then our other options.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
